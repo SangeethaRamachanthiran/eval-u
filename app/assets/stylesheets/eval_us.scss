@@ -1,0 +1,169 @@
+// Place all the styles related to the evalUs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+// Place all the styles related to the evalUs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+#image_div{
+   width: 50%;
+   height: auto;
+   margin-left: 5vw;
+}
+#image{
+    width: 30%;
+    height: auto;
+    margin-left: 7vw;
+}
+#tag_text{
+    font-size: 1.3vw; 
+    color: white; 
+    margin-left: 11vw;
+    margin-top: -4vw;
+    font-family: Poppins;
+}
+#logo_evalu{
+    width: 9vw;
+    margin-left: 5vw;
+    margin-top: 8vw;
+    z-index: 1000;
+}
+#text_evalu{
+    width: 18vw;
+    margin-left: 2vw;
+    margin-top: -1vw;
+}
+#content{
+    background-color: #24B7C6;
+    margin-top: 6vw;
+    height: 30vw;
+}
+.text_color{
+    font-family: Poppins;
+    margin-left: 10vw;
+    color: white;
+    font-size: 4vw;
+    // text-align: center;
+    padding-top: 8vw;
+}
+#fwsa_color{
+    font-family: Poppins;
+    font-weight: bold;
+    position: absolute;
+    left: 11%;
+    top: 13vw;
+    color: #F96972;
+    font-size: 1.5vw;
+    
+}
+#btn_style{
+    cursor: pointer;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 1.5vw;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 11vw;
+    margin-top: 1vw;
+    background-color: #F96972;
+    color: white;
+    width: 10vw;
+    height: 5.5vh;
+    border-radius: 10px;
+    border-style: none;
+    padding: 6px;
+}
+ul {
+    background: white;
+    z-index: 1;
+    padding-left: 65vw;
+    list-style-type: none;
+    // background-color: ;
+    padding-top: 3vw;
+    margin-top: -2%;
+    padding-bottom: 10px;
+    color: #24B7C6;
+    position: fixed;
+    width: max-content;
+    width: 100%;
+    font-family: Poppins;
+    }
+    
+    li {
+    float: left;
+    }   
+    
+    li a {
+    
+    display: block;
+    color: #24B7C6;
+    font-size: 25px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    // font-weight: 900;
+    }
+    .dropbtn{
+        width: 2.1vw;
+        height: 2.3vw;
+        margin-top: 0vw;
+        margin-left: 1vw;
+    }
+    li a:hover{
+        font-weight: 900;
+    }
+    .short_note{
+        width: 25vw;
+        margin-left: 8vw;
+        margin-top: 4vw;
+        margin-right: 6vw;
+        text-align: center;
+        
+    }
+    .head{
+        font-family: Poppins;
+        margin-top: 2vw;
+        color: #F96972;
+    }
+    #footer{
+        margin-top: 8vw;
+        background-color: whitesmoke;
+        width: 100%;
+        height: 25vw;
+        color: #F96972;   
+    }
+    #footer a{
+        font-family: Poppins;
+        text-decoration: none; 
+        color: #F96972;
+        font-size: 1.3vw;
+        margin-top: 1vw;
+        margin-left: 8vw;
+    }
+    #footer a:hover{
+        font-weight: 900;
+    }
+    #footer_evalu{
+        width: 12vw;
+        margin-top: 4vw;
+        margin-left: 43vw;
+    }
+    .footer_image{
+        width: 4vw;
+        margin-top: 5vw;
+        margin-left: 2vw;
+    }
+    #wrong_symbol{
+        width: 1.5vw;
+        margin-left: 33.5vw;
+    }
+    #redirect_page{
+        margin-top: 10vw ;
+        margin-left: 30vw;
+        width: 35vw;
+        height: 20vw;
+        border-radius: 2vw;
+        
+    }
+   

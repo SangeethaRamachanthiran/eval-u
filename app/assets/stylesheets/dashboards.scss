@@ -1,0 +1,383 @@
+// Place all the styles related to the dashboards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body{
+    // background-image: url('explore.png');
+    // background-repeat: no-repeat;
+    // background-size: 100vw 100vh;
+    // background-attachment: fixed;
+    background-color: white;
+    scroll-behavior: smooth;
+    Overflow-y:scroll;
+}
+.sidenav{
+    border-radius: 0px 70px 70px 0px;
+    background-color: #24B7C6;
+    width: 18vw;
+    height: 68vh;
+    margin-left: -1.8%;
+    margin-top: 8vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Poppins;
+}
+#tri_id{
+    margin-left: -1px;
+    margin-top: 24.5vw;
+    height: 3vw;
+    width: auto;
+}
+.sidenav a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    margin-top: 4vw;
+    margin-left: 0.5vw;
+}
+.image_class{
+    margin-left: 2vw;
+    margin-top: 4.3vw;
+}
+.container{
+   background-color: #24B7C6; 
+   padding: 10px;
+   margin: 2vw;
+   width: 55vw;
+   color: white;
+   font-family: Poppins;
+}
+
+.icon {
+    z-index: 1;
+    width: 4vw;
+    height: 4vw;
+    position: fixed;
+    margin-left: 42vw;
+    margin-top: 1.5vw;
+}
+
+#body_container{
+    border-color: #333;
+    border-style: groove;
+    border-width: 1px;
+    position: relative;
+    width: 66vw;
+    height: 88vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 24vw;
+    margin-top: 8%;
+  }
+  .timer_quiz{
+    // position:fixed;
+    width: 3vw;
+    height: auto;
+    background: white;
+    border-radius: 50%;
+    font-size: 1.5vw;
+    margin-left: 25vw;
+    margin-top: -5vw;
+    padding: 5px;
+    border-style: inset;
+    border-color: #24B7C6;
+    border-width: 1.5vw;
+    display: block;
+    text-align: center;
+  }
+  #edit_btn{
+    margin-left: 20vw; 
+    margin-top: 2vw;  
+    background-color: #F96972; 
+    border-color: #F96972; 
+    font-size: 1.5vw; 
+    font-family: Poppins; 
+    padding-bottom: 2vw; 
+    color: white; 
+    width: 5vw; 
+    height: 2vw;
+    cursor: pointer;
+  }
+  #edit_form{
+    margin-top: 10vw ;
+    margin-left: 30vw;
+    width: 35vw;
+    height: 28vw;
+    background-color: #24B7C6;
+    border-radius: 2vw;
+    text-align: center;
+  }
+  .edit_box{
+    font-family: Poppins;
+    width: 20vw;
+    height: 2vw;
+    margin-top: 2vw;
+    border-style: none;
+    border-radius: 15px;
+    font-size: 1.2vw;
+    padding: 5px;
+    text-align: center;
+    
+  }
+  #text_edit{
+    font-family: Poppins;
+    font-size: 2vw;
+    color: white;
+    padding-top: 0vw;
+  }
+  #edit_submit{
+    width: 6vw;
+    font-size: 1.5vw;
+    font-family: Poppins;
+    margin-top: 2vw;
+    background-color: #F96972;
+    border-color: #F96972;
+    color: white;
+    margin-bottom: 2vw;
+  }
+  .timer{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    font-size: 1.5vw;
+    margin-left: 25vw;
+    margin-top: -5vw;
+    padding: 20px;
+    border-color: #24B7C6;
+    border-width: 30px;
+  }
+  .que{
+    color: #012C3D;
+    position: relative;
+    // width:max-content;
+    transition: margin-left .5s;
+    padding: 5px;
+    width: 52vw;
+    height: 24vh;
+    margin-left: 6vw;
+    margin-top: 1vw;
+    background-color: #02e6ff3d;
+    border-style: none;
+    opacity: 55%;
+    border-radius: 25px;
+    
+  }
+  .question_id{
+    // position: absolute;
+    margin-left: -0.2vw;
+    margin-top: -0.2vw;
+    outline: none;
+    border-style: none;
+    width: 4vw;
+    height: 4vw;
+    background-color: #06a6b8;
+    border-color: #06a6b8;
+    border-radius: 0.5vw;
+    padding: 10px;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    font-family: Poppins;
+  }
+  .question_tag{
+    text-align: center;
+    outline: none;
+    border-style: none;
+    width: 35vw;
+    height: auto;
+    background-color: transparent;
+    border-color: #3F9EED;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #012C3D;
+    font-family: Poppins;
+  }
+
+  ::placeholder{
+    color: rgb(158, 158, 158);
+    font-size: 1.5vw;
+}
+
+.up_left{
+    font-weight: 900;
+    width: 45vw;
+    float: left;
+    height: 56px;
+    // margin-left: 6vw;
+    // margin-left: 25.2vw;
+    margin-top: 2vw;
+    font-size: 24px;
+    padding-bottom: 5px;
+    padding-left: 55px;
+    font-family: Poppins;
+    border-style: none;
+    color: #012C3D;
+    background-color: #24b6c62e;
+    border-radius: 5px;
+}
+.down_left{
+    font-weight: 900;
+    width: 45vw;
+    float: left;
+    height: 56px;
+    // margin-left: 6vw;
+    margin-top: 2vw;
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    padding-left: 55px;
+    font-family: Poppins;
+    border-style: none;
+    color: #012C3D;
+    background-color: #24b6c62e;
+    border-radius: 5px;
+    
+}
+.up_right{
+    font-weight: 900;
+    width: 45vw;
+    float: left;
+    height: 56px;
+    // margin-left: 6vw;
+    margin-top: 2vw;
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    padding-left: 55px;
+    font-family: Poppins;
+    border-style: none;
+    color: #012C3D;
+    background-color: #24b6c62e;
+    border-radius: 5px;
+}
+.down_right{
+    font-weight: 900;
+    width: 45vw;
+    float: left;
+    height: 56px;
+    // margin-left: 6vw;
+    margin-top: 2vw;
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    padding-left: 55px;
+    border-style: none;
+    font-family: Poppins;
+    color: #012C3D;
+    background-color: #24b6c62e;
+    border-radius: 5px;
+}
+.opt_A{
+  font-size: 1.5vw;
+  text-align: center;
+  color: white;
+  background-color: #06a6b8;
+  // position: absolute;
+  margin-left: 6.5vw;
+  margin-top: 2vw;
+  padding: 10px;
+  width: 2vw;
+  // height: 4.5vh;
+  height: auto;
+}
+.opt_B{
+  font-size: 1.5vw;
+  text-align: center;
+  color: white;
+  background-color: #06a6b8;
+  // position: absolute;
+  margin-left: 6.5vw;
+  margin-top: 2vw;
+  padding: 10px;
+  width: 2vw;
+  height: auto;
+}
+.opt_C{
+  font-size: 1.5vw;
+  text-align: center;
+  color: white;
+  background-color: #06a6b8;
+  // position: absolute;
+  margin-left: 6.5vw;
+  margin-top: 2vw;
+  padding: 10px;
+  width: 2vw;
+  height: auto;
+}
+.opt_D{
+  font-size: 1.5vw;
+  text-align: center;
+  color: white;
+  background-color: #06a6b8;
+  // position: absolute;
+  margin-left: 6.5vw;
+  margin-top: 2vw;
+  padding: 10px;
+  width: 2vw;
+  height: auto;
+}
+.timer_quiz{
+    text-align: center;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50vw;
+    font-size: 2vw;
+    border-color: #24B7C6;
+    border-width: 1.5vw;
+  }
+  #details{
+    // background-color: #F96972;
+    color: #24B7C6;
+    margin-top: 10vw;
+    margin-left: 8vw;
+    padding-top: 5vw;
+    border-radius: 3vw;
+  }
+
+  // #edit_icon{
+  //   margin-top: 5vw;
+  //   // margin-left: 55vw;
+  // }
+  .field_cls{
+    margin-top: 2vw;
+    margin-left: 4vw;
+    font-size: 1.3vw;
+    font-family: Poppins;
+    margin-right: 5vw;
+  }
+  .label_cls{
+    margin-top: 2vw;
+    margin-left: 5vw;
+    font-size: 1.3vw;
+    font-family: Poppins;
+  }
+  #profile_image{
+    width: 16vw;
+    margin-top: 1vw;
+    margin-left: 3.5vw;
+    background-color: whitesmoke; 
+    height: 16vw;
+    padding: 10px 10px 10px 10px;
+  }
+  #answer_result{
+    margin-left: 3vw;
+    font-size: 1.3vw;
+    font-family: Poppins;
+    margin-top: 4vw;
+  }
+  #err_msg{
+    font-size: 1.3vw;
+    font-family: Poppins;
+    background-color: #24B7C6;
+    padding: 40px;
+    margin-left: 5vw;
+  }
+  #err_msg_lib{
+    font-size: 1.3vw;
+    font-family: Poppins;
+    background-color: #24B7C6;
+    padding-top: 5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-left: 15vw;
+    margin-top: 15vw;
+    height: 10vw;
+  }

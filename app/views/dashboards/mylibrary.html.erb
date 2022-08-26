@@ -1,0 +1,87 @@
+<div id="big_container">
+    <div style=" display: flex; flex-direction: row;">
+      <div style="margin-top: -6vw; position: fixed; z-index: 100;">
+        <%= image_tag 'EVALU.png' , id: "logo_evalu" %>
+      </div>
+      <div>
+          <ul>
+            <li>
+              <a href="/home">
+                Home
+              </a>
+            </li>
+            <li>
+                <a href="/savetolibrary">
+                  Create
+                </a>
+            </li>
+            <li>
+                <a href="/mylibrary">
+                  Dashboard
+                </a>
+            </li>
+            <li class="dropdown">
+              <%= image_tag "loggedinuser.png" , height: 50, class: 'dropbtn' %>
+  
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#"><%= @current_user.username %></a>
+                      <a href="/profile" style="color: red; font-size: 25px;"> Profile </a>
+                      <a href="/logout" style="color: red; font-size: 25px;"> Logout </a>
+                    </div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+      </div>
+    </div>
+    
+
+    <div style="display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: row;">
+            <div class="sidenav">
+                <div style="display: flex; flex-direction: row;">
+                    <%= image_tag 'explore_image.png', width: "50vw", height: "50vw", class: "image_class" %>
+                    <a href="/explore">Explore</a>
+                </div>
+                <div style="display: flex; flex-direction: row;">
+                    <%= image_tag 'profileicon.png', width: "50vw", height: "50vw", class: "image_class" %>
+                    <a href="/profile">Profile</a>
+                </div>
+                <div style="display: flex; flex-direction: row; margin-top: 1vw;">
+                    <%= image_tag 'mylibrary.png', width: "50vw", height: "50vw", class: "image_class" %>
+                    <a href="/mylibrary" style="font-weight: 900;">My Library</a>
+                </div>
+                <div style="display: flex; flex-direction: row;">
+                    <%= image_tag 'report.png', width: "50vw", height: "50vw", class: "image_class" %>
+                    <a href="/reports">Report</a>
+                </div>
+            </div>
+            <div>
+                <%= image_tag 'triangle.png', id: "tri_id"%>
+            </div>
+        </div>
+        <% if @code_check %>
+          <div style="margin-top: 8vw; margin-left: 6vw; background-color: white;  border-color: #def7f9; border-style:solid;">   
+            <% @headings.each do |head| %>
+              <a href="/show_quiz/<%= head['id']%>" style="text-decoration: none;"> 
+                <div id="contain-/<% head.id %>" class="container">
+                    <div style="display: flex; flex-direction: row;">
+                      <div>
+                        <h2 style="color: white;"><%= head.heading %></h2>
+                        <h4 style="color: white;"><%= head.description %></h4>
+                      </div>
+                      <a href="edit_code/<%= head.id%>"><img src="<%= asset_path('editicon.png') %>" alt="editicon" class="icon" id="icon_<%= head.id %>"></a>
+                    </div>       
+                </div>
+              </a>
+            <% end %>  
+          </div>
+        <% else %>
+          <span id="err_msg_lib">Oops..! you are not created any questions yet</span>
+        <% end %>
+    </div>
+</div>
+<div>
+  
+</div>
+ 
